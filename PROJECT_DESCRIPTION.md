@@ -1,67 +1,67 @@
-# 产品数据比对系统 3.0 - 项目说明文档
+# Product Data Comparison System 3.0 - Project Documentation
 
-## 项目概述
-产品数据比对系统是一个用于比对不同数据表格差异的桌面应用程序，主要功能包括：
-- 数据库文件管理
-- 多文件手动比对
-- 数据库自动比对
-- 差异报告生成
+## Overview
+The Product Data Comparison System is a desktop application for comparing differences between data tables. Main features include:
+- Database file management
+- Multi-file manual comparison
+- Automatic database comparison
+- Difference report generation
 
-## 系统架构
+## System Architecture
 ```
 product-logger-py3.0/
-├── main.py                # 程序入口
-├── requirements.txt       # Python依赖库
-├── README.md              # 项目简介
-├── PROJECT_DESCRIPTION.md # 项目说明文档
-├── USER_MANUAL.md         # 使用说明书
+├── main.py                # Program entry
+├── requirements.txt       # Python dependencies
+├── README.md              # Project introduction
+├── PROJECT_DESCRIPTION.md # Project documentation
+├── USER_MANUAL.md         # User manual
 │
-├── data/                  # 数据存储目录
-│   ├── xlsx/              # 数据库文件(xlsx格式)
-│   ├── csv/               # 数据库文件(csv格式) 
-│   └── backup/            # 上传文件备份
+├── data/                  # Data storage directory
+│   ├── xlsx/              # Database files (xlsx format)
+│   ├── csv/               # Database files (csv format)
+│   └── backup/            # Uploaded files backup
 │
-├── results/               # 比对结果
-│   └── compare_reports/   # 手动比对报告
+├── results/               # Comparison results
+│   └── compare_reports/   # Manual comparison reports
 │
-├── ui/                    # 用户界面
-│   └── main_window.py     # 主窗口实现
+├── ui/                    # User interface
+│   └── main_window.py     # Main window implementation
 │
-├── logic/                 # 核心逻辑
-│   └── diff_logic.py      # 数据比对算法
+├── logic/                 # Core logic
+│   └── diff_logic.py      # Data comparison algorithm
 │
-└── utils/                 # 工具模块
-    └── file_utils.py      # 文件处理工具
+└── utils/                 # Utility modules
+    └── file_utils.py      # File handling utilities
 ```
 
-## 功能模块说明
+## Module Descriptions
 
-### 1. 数据库管理模块
-- 支持上传xlsx/csv格式数据库文件
-- 自动按格式分类存储
-- 密码保护上传功能
-- 自动备份机制
+### 1. Database Management Module
+- Supports uploading xlsx/csv format database files
+- Automatically categorizes and stores files by format
+- Password-protected upload functionality
+- Automatic backup mechanism
 
-### 2. 手动比对模块
-- 支持同时比对2-3个数据文件
-- 自动检查文件格式一致性
-- 生成详细差异报告(JSON格式)
-- 可视化差异显示
+### 2. Manual Comparison Module
+- Supports comparing 2-3 data files simultaneously
+- Automatically checks file format consistency
+- Generates detailed difference reports (JSON format)
+- Visual difference display
 
-### 3. 数据库比对模块
-- 单文件与数据库比对
-- 基于商品ID的智能匹配
-- 自动更新数据库
-- 生成带颜色标记的比对报告
+### 3. Database Comparison Module
+- Single file comparison with database
+- Smart matching based on product ID
+- Automatic database updates
+- Generates color-coded comparison reports
 
-### 4. 账户管理模块
-- 密码设置与找回
-- 邮箱绑定
-- 管理员功能
+### 4. Account Management Module
+- Password setup and recovery
+- Email binding
+- Administrator functions
 
-## 技术实现
-- 开发语言: Python 3.9+
-- GUI框架: PyQt6
-- 数据处理: pandas/openpyxl
-- 报告格式: JSON/Excel
-- 安全机制: SHA256加密
+## Technical Implementation
+- Development language: Python 3.9+
+- GUI framework: PyQt6
+- Data processing: pandas/openpyxl
+- Report formats: JSON/Excel
+- Security mechanism: SHA256 encryption

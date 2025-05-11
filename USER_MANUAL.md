@@ -1,84 +1,84 @@
-# 产品数据比对系统 3.0 - 使用说明书
+# Product Data Comparison System 3.0 - User Manual
 
-## 一、安装指南
+## 1. Installation Guide
 
-### 系统要求
-- 操作系统: Windows 10/11
-- Python版本: 3.9+
-- 内存: 4GB以上
-- 磁盘空间: 500MB可用空间
+### System Requirements
+- Operating System: Windows 10/11
+- Python Version: 3.9+
+- Memory: 4GB or more
+- Disk Space: 500MB available space
 
-### 安装步骤
-1. 安装Python 3.9+
-   - 从官网下载安装包: https://www.python.org/downloads/
-   - 安装时勾选"Add Python to PATH"
+### Installation Steps
+1. Install Python 3.9+
+   - Download installer from: https://www.python.org/downloads/
+   - Check "Add Python to PATH" during installation
 
-2. 安装依赖库
+2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-3. 运行程序
+3. Run the program
 ```bash
 python main.py
 ```
 
-## 二、界面说明
+## 2. Interface Overview
 
-### 主界面布局
-- 左侧功能区:
-  - 数据库上传区
-  - 手动比对区(3个上传按钮)
-  - 数据库比对区
-  - 账户管理区
-- 右侧信息显示区:
-  - 实时显示操作日志
-  - 比对结果展示
+### Main Interface Layout
+- Left functional area:
+  - Database upload section
+  - Manual comparison section (3 upload buttons)
+  - Database comparison section
+  - Account management section
+- Right information display area:
+  - Real-time operation logs
+  - Comparison results display
 
-## 三、功能使用说明
+## 3. Function Usage Instructions
 
-### 1. 数据库管理
-1. 点击"上传数据库文件"按钮
-2. 选择xlsx/csv格式文件
-3. 输入密码验证(首次使用需设置)
-4. 系统自动分类存储并备份
+### 1. Database Management
+1. Click "Upload Database File" button
+2. Select xlsx/csv format file
+3. Enter password for verification (required for first-time setup)
+4. System automatically categorizes and backs up files
 
-### 2. 手动比对
-1. 上传2-3个比对文件(点击上传按钮1/2/3)
-2. 点击"开始比对"按钮
-3. 系统自动检查格式一致性
-4. 查看右侧信息区的比对结果
-5. 报告自动保存到results/compare_reports/
+### 2. Manual Comparison
+1. Upload 2-3 comparison files (click upload buttons 1/2/3)
+2. Click "Start Comparison" button
+3. System automatically checks format consistency
+4. View comparison results in the information area
+5. Reports are automatically saved to results/compare_reports/
 
-### 3. 数据库比对
-1. 上传要比对的文件
-2. 点击"与数据库比对"按钮
-3. 系统自动匹配商品ID
-4. 差异项自动更新到数据库
-5. 查看比对总结报告
+### 3. Database Comparison
+1. Upload file to compare
+2. Click "Compare with Database" button
+3. System automatically matches product IDs
+4. Differences are automatically updated to database
+5. View comparison summary report
 
-### 4. 账户管理
-- 修改密码: 需验证旧密码
-- 找回密码: 通过邮箱验证
-- 更换邮箱: 需密码验证
-- 管理员设置: 需管理员密码
+### 4. Account Management
+- Change password: Requires old password verification
+- Password recovery: Through email verification
+- Change email: Requires password verification
+- Admin settings: Requires admin password
 
-## 四、常见问题
+## 4. Frequently Asked Questions
 
-### Q1: 上传文件失败怎么办？
-A: 检查文件是否被其他程序占用，格式是否符合要求
+### Q1: What if file upload fails?
+A: Check if file is being used by another program and verify format requirements
 
-### Q2: 忘记密码怎么办？
-A: 点击"忘记密码"按钮，通过邮箱验证重置
+### Q2: What if I forgot my password?
+A: Click "Forgot Password" button and reset through email verification
 
-### Q3: 比对结果不准确？
-A: 确保比对文件的列结构和表头一致
+### Q3: Comparison results seem inaccurate?
+A: Ensure comparison files have identical column structure and headers
 
-### Q4: 程序无响应？
-A: 大文件处理需要时间，请耐心等待
+### Q4: Program not responding?
+A: Large files take time to process, please wait patiently
 
-## 五、注意事项
-1. 重要文件请提前备份
-2. 数据库文件会自动覆盖旧版本
-3. 锁定后需等待15分钟或重启程序
-4. 建议定期清理results目录
+## 5. Important Notes
+1. Backup important files in advance
+2. Database files will automatically overwrite old versions
+3. After lockout, wait 15 minutes or restart program
+4. Regularly clean results directory is recommended
